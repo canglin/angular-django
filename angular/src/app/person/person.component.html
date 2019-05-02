@@ -1,0 +1,18 @@
+<p>
+  <strong>{{firstname |titlecase}}
+    <span *ngIf="firstname != 'Sherlock'">&nbsp;<del>(Sherlock)</del>&nbsp;</span>
+    <span *ngIf="lastname != 'Holmes'">&nbsp;<del>(Holmes)</del>&nbsp;</span>
+    {{lastname |titlecase}}!
+  </strong><br/>
+  {{firstname |titlecase}} is {{height}} cm  or {{height_feet|number: "1.0-1"}} feet tall
+  <span *ngIf="height > 195" class="badge badge-success">tall</span>
+  <span *ngIf="height > 179 && height <=195" class="badge badge-info">average</span>
+  <span *ngIf="height > 160 && height <=179" class="badge badge-warning">short</span>
+  <span *ngIf="height > 110 && height <=160" class="badge badge-danger">small</span>
+  <br/>
+  <button (click)="height_up()" class="btn btn-primary">Increase Height +</button>
+  <button (click)="height_down()" class="btn btn-primary ml-1">Decrease Height -</button>
+  <br/>
+  Born on {{birthday |date}} or formatted {{ birthday |date: "MM/dd/yyyy" }}
+  <br/>
+</p>

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+$font-size-base: 1rem;
+@import "~node_modules/bootstrap/scss/bootstrap";
+
+#navinnav {
+  .navbar-brand{
+    margin-right: 3rem;
+  }
+  .nav-item {
+    margin: 0rem 2rem;
+    &.active {
+      border-bottom: 4px solid $primary;
+      margin-bottom: -4px;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+  color: whitesmoke;
+  min-height: 100px;
+  code{
+    color: white !important;
+    font-size: 1rem;
+  }
+}
