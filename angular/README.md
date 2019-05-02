@@ -1,5 +1,11 @@
 # Angulartest
 
+## Install packages
+npm install -g --save @angular/cli
+npm install -g --save node-sass
+npm install --save @ng-bootstrap/ng-bootstrap
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
