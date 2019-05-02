@@ -1,17 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterModule, Routes} from "@angular/router";
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {RouterModule, Routes} from '@angular/router';
 
-import { CarService} from "./car.service";
-import { AppComponent } from './app.component';
-import { PersonComponent } from './person/person.component';
-import { EngineComponent } from './engine/engine.component';
-import { ExteriorComponent } from './exterior/exterior.component';
-import { InteriorComponent } from './interior/interior.component';
-import { AutopilotComponent } from './autopilot/autopilot.component';
-import { PaymentComponent } from './payment/payment.component';
-import { SummaryComponent } from './summary/summary.component';
+import {CarService} from './car.service';
+import {AppComponent} from './app.component';
+import {PersonComponent} from './person/person.component';
+import {EngineComponent} from './engine/engine.component';
+import {ExteriorComponent} from './exterior/exterior.component';
+import {InteriorComponent} from './interior/interior.component';
+import {AutopilotComponent} from './autopilot/autopilot.component';
+import {PaymentComponent} from './payment/payment.component';
+import {SummaryComponent} from './summary/summary.component';
+import {PreviewComponent} from './preview/preview.component';
 
 const appRoutes: Routes = [
   { path: 'engine', component: EngineComponent },
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
   { path: 'autopilot', component: AutopilotComponent },
   { path: 'payment', component: PaymentComponent },
   { path: '', redirectTo: '/engine', pathMatch: 'full' }
-]
+];
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     InteriorComponent,
     AutopilotComponent,
     PaymentComponent,
-    SummaryComponent
+    SummaryComponent,
+    PreviewComponent
   ],
   imports: [
     BrowserModule,

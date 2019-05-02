@@ -1,3 +1,13 @@
-<p>
-  exterior works!
-</p>
+<div class="row">
+  <div class="col-9">
+    <app-preview></app-preview>
+  </div>
+  <div class="col-3">
+    Select Color:
+    <button (click)="car.order.wheels = wheel"
+            *ngFor="let wheels of car.model.wheels"
+            [class]="'ml-2 btn btn=' +(car.order.wheels == wheels ? 'primary' :'secondary')">
+      {{ wheels.name }}
+    </button>
+  </div>
+</div>
