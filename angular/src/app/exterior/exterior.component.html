@@ -1,13 +1,17 @@
-<div class="row">
+<div class="row text-left">
   <div class="col-9">
     <app-preview></app-preview>
   </div>
   <div class="col-3">
-    Select Color:
-    <button (click)="car.order.wheels = wheel"
-            *ngFor="let wheels of car.model.wheels"
-            [class]="'ml-2 btn btn=' +(car.order.wheels == wheels ? 'primary' :'secondary')">
-      {{ wheels.name }}
+    Select color:
+
+    <hr>
+    Select wheels:
+    <br/>
+    <button *ngFor="let wheels of car.model.wheels"
+        (click)="car.order.wheels = wheels"
+        [class]="'ml-2 btn btn-' + (car.order.wheels == wheels ? 'primary' : 'secondary')">
+            {{ wheels.name }}
     </button>
   </div>
 </div>
