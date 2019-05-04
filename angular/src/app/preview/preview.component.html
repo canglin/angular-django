@@ -1,9 +1,6 @@
 <div class="preview">
   <div class="layer" [style.backgroundColor]="car.order.exterior_color"></div>
-  <img alt="Engine Image" src='/assets/body.png'/>
-  <div class="layer" [ngStyle]="{'background-image': 'url(\'' + selectedWheelsLayer + '\')'}"></div>
-  <div class="layer">
-    <img [ngStyle]="{'background-image': 'url(\'' +selectedWheelsLayer+ '\')'}"/>
-    <img src={{selectedWheelsLayer}}/>
+  <div [ngStyle]="{'background-image': 'url(/assets/body.png)', 'height': '533px', 'width': '800px'}" class="layer">
+    <div [ngStyle]="{'background-image': 'url('+selectedWheelsLayer+')', 'height': '533px', 'width': '800px'}" class="layer"></div>
   </div>
 </div>

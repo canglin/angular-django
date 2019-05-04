@@ -17,9 +17,10 @@ export class CarService {
         {id: 3, name: 'Three', price: 2000, image: '/assets/engine-3.png'},
       ],
       wheels: [
-        {id: 1, name: "18'", price: 0, image: '/assets/wheels-1.png'},
-        {id: 2, name: "19'", price: 500, image: '/assets/wheels-2.png'},
-      ]
+        {id: 1, name: "18'", price: 0, image: '/assets/wheels-18.png'},
+        {id: 2, name: "19'", price: 500, image: '/assets/wheels-19.png'},
+      ],
+      exterior_color: 'white'
     };
 
     this.order = {

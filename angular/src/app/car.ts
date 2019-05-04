@@ -16,4 +16,5 @@ export interface Model {
   base_price: number;
   engines: Array<Engine>;
   wheels: Array<Wheels>;
+  exterior_color: string;
 }
