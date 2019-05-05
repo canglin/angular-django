@@ -1,6 +1,8 @@
 <div class="row">
   <div style="height: 20%" class="col-9 text-center">
-    <img alt="Engine Image" src="{{ car.order.engine.image }}"/>
+    <div [ngStyle]="{'height': '300px', 'width': '490px'}" class="layer">
+      <img alt="Engine Image" height='100%' src="{{ car.order.engine.image }}" width='100%'/>
+    </div>
   </div>
   <div class="col-3">
     <button *ngFor="let engine of car.model.engines"
