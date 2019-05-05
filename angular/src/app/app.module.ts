@@ -13,6 +13,8 @@ import {AutopilotComponent} from './autopilot/autopilot.component';
 import {PaymentComponent} from './payment/payment.component';
 import {SummaryComponent} from './summary/summary.component';
 import {PreviewComponent} from './preview/preview.component';
+import { ColorpickerComponent } from './colorpicker/colorpicker.component';
+import { BarComponent } from './colorpicker/bar/bar.component';
 
 const appRoutes: Routes = [
   { path: 'engine', component: EngineComponent },
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     AutopilotComponent,
     PaymentComponent,
     SummaryComponent,
-    PreviewComponent
+    PreviewComponent,
+    ColorpickerComponent,
+    BarComponent
   ],
   imports: [
     BrowserModule,
