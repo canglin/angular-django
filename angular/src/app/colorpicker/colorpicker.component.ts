@@ -9,7 +9,7 @@ function hexVal(num: number) {
 }
 
 function hexToRgb(value: string) {
-  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(value);
+  let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(value);
   return result ? {
     r: parseInt(result[1], 16),
     g: parseInt(result[2], 16),
@@ -27,14 +27,6 @@ export class ColorpickerComponent implements OnInit {
   r = 0;
   g = 0;
   b = 0;
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
-
   @Output()
   colorChange = new EventEmitter<string>();
 
@@ -53,7 +45,14 @@ export class ColorpickerComponent implements OnInit {
   }
 
   update() {
-    this.colorChange.emit(this.color)
+    this.colorChange.emit(this.color);
   }
+
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
+
 
 }

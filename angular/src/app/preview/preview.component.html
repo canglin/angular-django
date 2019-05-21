@@ -1,10 +1,10 @@
 <div class="preview">
-  <div class="layer" [style.backgroundColor]="car.order.exterior_color">
-    <div [ngStyle]="{'height': '460px', 'width': '800px'}" class="layer">
+<!--  <div class="layer" [style.backgroundColor]="car.order.exterior_color">-->
+    <div [style.backgroundColor]="car.order.exterior_color" [ngStyle]="{'height': '460px', 'width': '800px'}" class="layer">
       <div [ngStyle]="{'background-image': 'url(/assets/body.png)', 'height': '100%', 'width': '100%'}" class="layer">
         <div [ngStyle]="{'background-image': 'url('+selectedWheelsLayer+')', 'height': '100%', 'width': '100%'}"
              class="layer"></div>
       </div>
     </div>
-  </div>
+<!--  </div>-->
 </div>

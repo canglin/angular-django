@@ -1,9 +1,8 @@
 <div>
-  <color-bar [value]="r" (valueChange)="r=$event; update()"></color-bar>
-  <color-bar [value]="g" (valueChange)="g=$event; update()"></color-bar>
-  <color-bar [value]="b" (valueChange)="b=$event; update()"></color-bar>
-
   R = {{ r }}<br>
   G = {{ g }}<br>
   B = {{ b }}<br>
+ <app-cbar [value]='r'></app-cbar>
 </div>
+<!--  <app-cbar [value]="g" (valueChange)="g=$event; update()"></app-cbar>-->
+<!--  <app-cbar [value]="b" (valueChange)="b=$event; update()"></app-cbar>-->

@@ -15,6 +15,7 @@ import {SummaryComponent} from './summary/summary.component';
 import {PreviewComponent} from './preview/preview.component';
 import { ColorpickerComponent } from './colorpicker/colorpicker.component';
 import { BarComponent } from './colorpicker/bar/bar.component';
+import { CbarComponent } from './colorpicker/cbar/cbar.component';
 
 const appRoutes: Routes = [
   { path: 'engine', component: EngineComponent },
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     SummaryComponent,
     PreviewComponent,
     ColorpickerComponent,
-    BarComponent
+    BarComponent,
+    CbarComponent
   ],
   imports: [
     BrowserModule,
